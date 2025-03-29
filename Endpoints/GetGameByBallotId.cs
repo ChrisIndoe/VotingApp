@@ -42,6 +42,9 @@ public static class GetGameByBallotId
                     };
                     games.Add(game);
                 }
+
+                var random = new Random();
+                games = games.OrderBy(x => random.Next()).ToList();
             }
             catch (SqlException e)
             {
