@@ -1,4 +1,3 @@
-
 using AnnoyedVotingApi.Endpoints;
 using AnnoyedVotingApi.Configuration;
   
@@ -25,5 +24,6 @@ app.MapAddVotes();
 app.MapGetGameByBallotId();
 app.MapGetGamesAndVotesByBallotId();
 app.MapGetImage();
+app.MapGetBallotScores();
 
 app.Run();
